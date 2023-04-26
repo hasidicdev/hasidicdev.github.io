@@ -1,0 +1,9 @@
+<div class="p-4 p-md-5 mb-4 rounded text-bg-dark feature-top">
+  <div class="col-md-8 px-0">
+    {% assign posts = site.posts | where: "category", "torah" | sort: "date" | reverse %}
+    {% assign most_recent_post = posts.first %}
+    <h1 class="display-4 fst-italic" style="text-shadow: 2px 3px grey">{{ most_recent_post.title }}</h1>
+    <div class="lead my-3 bg-black p-3 col-md-8 rounded">{{ most_recent_post.content | truncate: 200, '...' }}</div>
+    <p class="lead mb-0"><a href="{{ most_recent_post.url}}" class="text-white fw-bold">Continue reading...</a></p>
+  </div>
+</div>

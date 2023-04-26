@@ -1,0 +1,9 @@
+<div class="p-4 border border-secondary-subtle rounded bg-body-tertiary mb-3">
+  <h4 class="fst-italic">Site Links</h4>
+  <hr class="col-7" />
+  <ol class="list-unstyled">
+    {% for item in site.data.navigation %}
+    <li>{{item.icon}} <a href="{{item.link}}">{{item.name}}</a></li>
+    {% endfor %}
+  </ol>
+</div>

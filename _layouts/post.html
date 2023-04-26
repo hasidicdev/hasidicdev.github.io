@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    {% include head.html %}
+
+  </head>
+  <body>
+    
+    <div class="container">
+      {% include header.html %}
+
+      <div class="nav-scroller py-1 mb-2">
+        {% include topnav.html %}
+      </div>
+    </div>
+
+    <main class="container">
+
+      <div class="row g-5">
+        <div class="col-md-8 alert alert-success">
+          <sup class="float-end fw-bold text-warning-emphasis m-3 badge bg-warning fw-bold">#{{page.tags}}</sup>
+          <p class="display-1 fw-bold post-image p-3 text-white rounded border border-warning-subtle" style="text-shadow: 1px 3px grey">
+            {{page.title}}
+          </p>
+          {% for author in site.data.authors %}
+          {% if page.author == author.id %}
+          <p>By: <span class="fw-bold">{{author.name}}</span></p>
+          {% endif %}
+          {% endfor %}
+
+          {{content}}
+        </div>
+
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem;">
+            {% include sidebar/about.html %}
+            
+            {% include sidebar/social.html %}
+
+            {% include sidebar/author.html %}
+            
+            {% include sidebar/ads.html %}
+
+            {% include sidebar/archive.html %}
+
+            {% include sidebar/internal_links.html %}
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    {% include footer.html %}
+
+
+    
+  </body>
+</html>

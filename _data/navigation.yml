@@ -1,0 +1,9 @@
+- name: Home
+  link: /
+  icon: "<i class='fa fa-home'></i>"
+- name: Archive
+  link: /archive
+  icon: "<i class='fa fa-book'></i>"
+- name: Contact
+  link: /contact
+  icon: "<i class='fa fa-envelope'></i>"

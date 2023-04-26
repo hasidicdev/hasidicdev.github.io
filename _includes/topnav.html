@@ -1,0 +1,15 @@
+{% assign categories = "" | split: "" %}
+{% for post in site.posts %}
+  {% for category in post.categories %}
+    {% if categories contains category %}
+    {% else %}
+      {% assign categories = categories | push: category %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+<nav class="nav d-flex">
+  {% for category in categories %}
+    <a class="p-2 link-secondary" href="/{{category}}">{{category | capitalize }}</a>
+  {% endfor %}
+</nav>
