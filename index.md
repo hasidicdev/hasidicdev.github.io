@@ -22,29 +22,29 @@ title: Home Page
   {% endif %}
 
   {% if category == "torah" %}
-  <article class="blog-post bg-black text-bg-dark p-3 rounded border">
-    <sup class="float-end badge bg-primary fw-bold">#{{post.tags}}</sup>
+  <article class="blog-post">
+    <sup class="float-end badge bg-secondary fw-bold">#{{post.tags}}</sup>
     <h2 class="blog-post-title mb-1">{{post.title}}</h2>
     <p class="blog-post-meta">{{post.date | date: "%B %d, %Y" }} by <a href="{{ '/authors/' | absolute_url }}{{post.author}}">{{post.author}}</a></p>
     <hr/>
     <p>{{post.excerpt}}</p>
-    <p><a href="{{post.url}}" class="btn btn-primary">Read More...</a></p>
+    <p><a href="{{post.url}}" class="btn btn-dark">Read More...</a></p>
   </article>
   {% endif %}
 
   {% if category == "israel" %}
-  <article class="blog-post bg-primary-subtle text-primary-emphasis p-3 rounded border border-primary">
+  <article class="blog-post">
     <sup class="float-end badge bg-primary fw-bold">#{{post.tags}}</sup>
     <h2 class="blog-post-title mb-1">{{post.title}}</h2>
     <p class="blog-post-meta">{{post.date | date: "%B %d, %Y" }} by <a href="{{ '/authors/' | absolute_url }}{{post.author}}">{{post.author}}</a></p>
     <hr/>
     <p>{{post.excerpt}}</p>
-    <p><a href="{{post.url}}" class="btn btn-primary">Read More...</a></p>
+    <p><a href="{{post.url}}" class="btn btn-dark">Read More...</a></p>
   </article>
   {% endif %}
   
   {% if category == "hassidut" %}
-  <article class="blog-post alert alert-secondary border border-secondary-subtle">
+  <article class="blog-post">
     <sup class="float-end badge bg-dark fw-bold">#{{post.tags}}</sup>
     <h2 class="blog-post-title mb-1">{{post.title}}</h2>
     <p class="blog-post-meta">{{post.date | date: "%B %d, %Y" }} by <a href="{{ '/authors/' | absolute_url }}{{post.author}}">{{post.author}}</a></p>

@@ -4,14 +4,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is the personal website of leatheresque where you can find gems created by him.
 
 baseurl          : ""
-url              : "https://hasidicdev.github.io"
+url              : "https://hasidic.dev"
 
 author           : Joseph Estes
 
 social:
   email            : yosi@hasidic.dev
   discord_id       : leatheresque#3820
-  invite_link      : 8uc5FyPdHk
+  invite_link      : p5dWcctura
 
 plugins:
   - jekyll-feed
