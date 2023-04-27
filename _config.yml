@@ -1,7 +1,7 @@
 title: Hasidic New Times
 
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the personal website of leatheresque where you can find gems created by him.
+  Hasidic New Times is a new online newspaper for the Hasidic world, guest contributions and opinion pieces welcome
 
 baseurl          : ""
 url              : "https://hasidic.dev"
@@ -10,8 +10,7 @@ author           : Joseph Estes
 
 social:
   email            : yosi@hasidic.dev
-  discord_id       : leatheresque#3820
-  invite_link      : p5dWcctura
+  invite_link      : 7XezzYwe9U
 
 plugins:
   - jekyll-feed

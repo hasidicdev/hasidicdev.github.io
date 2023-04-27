@@ -4,7 +4,7 @@ title: Home Page
 ---
 
 <h1 class="pb-4 mb-4 fst-italic">From the Editor...</h1>
-<p class="lead mb-5">This site is in the beginning stages, if you would like an account email me and I will set you up with one. The posts below are weekly parsha thoughts submitted by users to other sites until I create enough content, I will use a different color background to help people identify the posts. Light green backgrounds are for site announcements. Black background is for torah posts. Blue is for Eretz Yisrael</p>
+<p class="lead mb-5">This site is in the beginning stages, if you would like an account email me and I will set you up with one. The posts below are weekly parsha thoughts submitted by users to other sites until I create enough content, I will use a different color background to help people identify the posts. Light green backgrounds are for site announcements. If you would like to run an advertisement on the site get in touch via the contact page or the email link in the sidebar.</p>
 
 
 {% for post in site.posts %}
@@ -22,7 +22,7 @@ title: Home Page
   {% endif %}
 
   {% if category == "torah" %}
-  <article class="blog-post">
+  <article class="blog-post bg-white p-3 border border-secondary-subtle rounded">
     <sup class="float-end badge bg-secondary fw-bold">#{{post.tags}}</sup>
     <h2 class="blog-post-title mb-1">{{post.title}}</h2>
     <p class="blog-post-meta">{{post.date | date: "%B %d, %Y" }} by <a href="{{ '/authors/' | absolute_url }}{{post.author}}">{{post.author}}</a></p>
@@ -33,7 +33,7 @@ title: Home Page
   {% endif %}
 
   {% if category == "israel" %}
-  <article class="blog-post">
+  <article class="blog-post bg-white p-3 border border-secondary-subtle rounded">
     <sup class="float-end badge bg-primary fw-bold">#{{post.tags}}</sup>
     <h2 class="blog-post-title mb-1">{{post.title}}</h2>
     <p class="blog-post-meta">{{post.date | date: "%B %d, %Y" }} by <a href="{{ '/authors/' | absolute_url }}{{post.author}}">{{post.author}}</a></p>
@@ -44,7 +44,7 @@ title: Home Page
   {% endif %}
   
   {% if category == "hassidut" %}
-  <article class="blog-post">
+  <article class="blog-post bg-white p-3 border border-secondary-subtle rounded">
     <sup class="float-end badge bg-dark fw-bold">#{{post.tags}}</sup>
     <h2 class="blog-post-title mb-1">{{post.title}}</h2>
     <p class="blog-post-meta">{{post.date | date: "%B %d, %Y" }} by <a href="{{ '/authors/' | absolute_url }}{{post.author}}">{{post.author}}</a></p>

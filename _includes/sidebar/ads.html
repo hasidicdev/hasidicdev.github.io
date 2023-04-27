@@ -1,11 +1,15 @@
-<div class="p-4 mb-3 border border-secondary-subtle rounded">
+<div class="p-4 mb-3 border border-secondary-subtle bg-body-tertiary rounded">
   <sup class="float-end">Site Ads</sup>
   {% for product in site.data.ads %}
   <h4 class="fst-italic">{{product.name}}</h4>
   <hr class="col-9" />
   <img class="img-fluid rounded py-3" src="{{product.image}}" />
   <p>{{product.description}}</p>
-  <p><a href="{{product.link}}"><i class="fa-solid fa-up-right-from-square"></i> Visit Site</a></p>
+  <hr/>
+  <p class="fw-bold">Price: <span class="float-end badge bg-success">${{product.price}}</span></p>
+  <p class="text-center">
+    <a href="{{product.link}}"><i class="fa-solid fa-up-right-from-square"></i> Visit Site</a>
+  </p>
   {% endfor %}
   <p class="alert alert-success" style="font-size: 0.8rem;">If you would like to run an ad here on the site send me an email so we can discuss it. This ad is just an example so people see this service</p>
 </div>
