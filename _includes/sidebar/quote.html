@@ -1,0 +1,17 @@
+<div class="p-4 border bg-body-tertiary border border-secondary-subtle mb-3">
+  <h4 class="fst-italic">Rebbe Quotes</h4>
+  <hr class="col-9" />
+  {% assign random_quote = site.data.quotes | sample %}
+  <figure> 
+    <blockquote class="blockquote">
+      <p class="fw-bold mb-0">{{ random_quote.source }}</p>
+      <p>{{ random_quote.quote }}</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <cite title="Source Author">R. {{ random_quote.rabbi }}</cite>
+    </figcaption>
+    <a href="https://twitter.com/intent/tweet?text={{random_quote.quote}} - R. {{random_quote.rabbi}} @hasidicnewtimes" target="_blank" class="btn btn-outline-dark">
+      <i class="fa-brands fa-twitter"></i> Tweet This...
+    </a>
+  </figure>
+</div>
