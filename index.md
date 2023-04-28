@@ -28,7 +28,7 @@ title: Home Page
     <p class="blog-post-meta">{{post.date | date: "%B %d, %Y" }} by <a href="{{ '/authors/' | absolute_url }}{{post.author}}">{{post.author}}</a></p>
     <hr/>
     <p>{{post.excerpt}}</p>
-    <p><a href="{{post.url}}" class="btn btn-dark">Read More...</a></p>
+    <p><a href="{{post.url}}" class="btn btn-outline-secondary">Read More...</a></p>
   </article>
   {% endif %}
 
@@ -39,7 +39,7 @@ title: Home Page
     <p class="blog-post-meta">{{post.date | date: "%B %d, %Y" }} by <a href="{{ '/authors/' | absolute_url }}{{post.author}}">{{post.author}}</a></p>
     <hr/>
     <p>{{post.excerpt}}</p>
-    <p><a href="{{post.url}}" class="btn btn-dark">Read More...</a></p>
+    <p><a href="{{post.url}}" class="btn btn-outline-primary">Read More...</a></p>
   </article>
   {% endif %}
   
@@ -50,8 +50,20 @@ title: Home Page
     <p class="blog-post-meta">{{post.date | date: "%B %d, %Y" }} by <a href="{{ '/authors/' | absolute_url }}{{post.author}}">{{post.author}}</a></p>
     <hr/>
     <p>{{post.excerpt}}</p>
-    <p><a href="{{post.url}}" class="btn btn-dark">Read More...</a></p>
+    <p><a href="{{post.url}}" class="btn btn-outline-dark">Read More...</a></p>
   </article>
   {% endif %}
+
+  {% if category == "teshuvah" %}
+  <article class="blog-post bg-white p-3 border border-secondary-subtle rounded">
+    <sup class="float-end badge bg-warning fw-bold">#{{post.tags}}</sup>
+    <h2 class="blog-post-title mb-1">{{post.title}}</h2>
+    <p class="blog-post-meta">{{post.date | date: "%B %d, %Y" }} by <a href="{{ '/authors/' | absolute_url }}{{post.author}}">{{post.author}}</a></p>
+    <hr/>
+    <p>{{post.excerpt}}</p>
+    <p><a href="{{post.url}}" class="btn btn-outline-warning">Read More...</a></p>
+  </article>
+  {% endif %}
+
   {% endfor %}
 {% endfor %}
