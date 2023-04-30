@@ -9,8 +9,10 @@ url              : "https://hasidic.dev"
 author           : Joseph Estes
 
 social:
-  email            : yosi@hasidic.dev
   invite_link      : 7XezzYwe9U
+  twitter          : hasidicnewtimes
+  github           : hasidicdev
+  email            : yosi@hasidic.dev
 
 plugins:
   - jekyll-feed

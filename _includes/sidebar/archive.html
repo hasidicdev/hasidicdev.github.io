@@ -1,5 +1,6 @@
 <div class="p-4 border border-secondary-subtle rounded bg-body-tertiary mb-3">
-  <h4 class="fst-italic">Archives</h4>
+  <sup class="float-end">Archives</sup>
+  <h4 class="fst-italic">Posts By Date</h4>
   <hr class="col-9" />
   <ul class="mb-0">
     {% assign postsByMonth = site.posts | group_by_exp:"post", "post.date | date: '%B %Y'" %}

@@ -1,9 +1,10 @@
 <div class="p-4 border border-secondary-subtle rounded bg-body-tertiary mb-3">
-  <h4 class="fst-italic">Site Links</h4>
+  <sup class="float-end">Site Links</sup>
+  <h4 class="fst-italic">Pages</h4>
   <hr class="col-7" />
-  <ol class="">
+  <ul class="">
     {% for item in site.data.navigation %}
-    <li><a href="{{item.link}}">{{item.name}}</a></li>
+    <li><a class="fw-bold" href="{{item.link}}">{{item.name}}</a></li>
     {% endfor %}
-  </ol>
+  </ul>
 </div>

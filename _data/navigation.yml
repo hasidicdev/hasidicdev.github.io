@@ -1,12 +1,8 @@
-- name: Home
-  link: /
-  icon: "<i class='fa fa-home'></i>"
 - name: Blog Archive 
   link: /archive
-  icon: "<i class='fa fa-book'></i>"
-- name: Contact Editor
-  link: /contact
-  icon: "<i class='fa fa-envelope-open'></i>"
-- name: Discord Server
-  link: https://discord.gg/7XezzYwe9U
-  icon: "<i class='fa-brands fa-discord'></i>"
+- name: About Us
+  link: /about
+- name: Podcasts
+  link: /podcasts
+- name: Subscriptions
+  link: /subscriptions

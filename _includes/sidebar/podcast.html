@@ -1,0 +1,23 @@
+<div class="p-4 mb-3 border border-secondary-subtle bg-body-tertiary rounded">
+  <sup class="float-end">Podcasts</sup>
+  <h4 class="fst-italic">Most Recent</h4>
+  <dl id="podcast" class="mb-0"></dl>
+</div>
+
+<script>
+$(document).ready(function() {
+  $.get("https://v1.jewishpodcasts.fm/rss/548", function(data) {
+    var items = [];
+    $(data).find("item").slice(0,1).each(function(index) {
+      var item = $(this);
+      var title = item.find("title").text();
+      var enclosure = item.find("enclosure").attr("url");
+      var dt = 
+      "<dt>" + title + "</dt>" + 
+      "<hr />" +
+      "<dd><audio class='w-100' src='" + enclosure + "' controls></audio></dd>";
+      $("#podcast").append(dt);
+    });
+  });
+});
+</script>
