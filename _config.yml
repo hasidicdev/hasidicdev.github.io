@@ -1,18 +1,17 @@
-title: Hasidic New Times
+url              : "https://hasidic.dev"
+baseurl          : ""
+title            : Hasidic New Times
 
 description: >- # this means to ignore newlines until "baseurl:"
   Hasidic New Times is a new online newspaper for the Hasidic world, guest contributions and opinion pieces welcome
 
-baseurl          : ""
-url              : "https://hasidic.dev"
-
 author           : Joseph Estes
 
 social:
-  invite_link      : 7XezzYwe9U
-  twitter          : hasidicnewtimes
-  github           : hasidicdev
-  email            : yosi@hasidic.dev
+  invite_link    : 7XezzYwe9U
+  twitter        : hasidicnewtimes
+  github         : hasidicdev
+  email          : yosi@hasidic.dev
 
 plugins:
   - jekyll-feed
